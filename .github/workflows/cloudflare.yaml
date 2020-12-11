@@ -31,7 +31,7 @@ jobs:
     
     - name: Scan
       run: |
-        python3 scan-cloudflare.py iplist.txt 200
+        sudo python3 scan-cloudflare.py iplist.txt 200
 
     - name: Upload pytest test results
       uses: actions/upload-artifact@v2
