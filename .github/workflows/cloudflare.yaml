@@ -3,9 +3,9 @@ name: Cloudflare
 on: 
   push:
     branches: [master]
-  schedule:
+  # schedule:
     # 时间是按 UTC 设置
-    - cron: 0 12 * * *
+    # - cron: 0 12 * * *
 
 jobs:
   build:
