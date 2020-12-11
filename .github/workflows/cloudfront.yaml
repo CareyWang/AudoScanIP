@@ -30,7 +30,7 @@ jobs:
     
     - name: Scan
       run: |
-        sudo python3 scan-cloudfront.py iplist.txt 200
+        sudo python scan-cloudfront.py iplist.txt 200
 
     - name: Upload pytest test results
       uses: actions/upload-artifact@v2
