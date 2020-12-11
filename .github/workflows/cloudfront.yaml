@@ -35,7 +35,7 @@ jobs:
       run: |
         sudo python scan-cloudfront.py iplist.txt 200
 
-    - name: Upload pytest test results
+    - name: Upload scan results
       uses: actions/upload-artifact@v2
       with:
         name: cloudfront-cn-ips.txt

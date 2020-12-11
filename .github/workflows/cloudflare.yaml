@@ -36,7 +36,7 @@ jobs:
       run: |
         sudo python scan-cloudflare.py iplist.txt 200
 
-    - name: Upload pytest test results
+    - name: Upload scan results
       uses: actions/upload-artifact@v2
       with:
         name: cloudflare-cn-ips.txt
